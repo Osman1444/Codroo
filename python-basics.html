@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Basics - Learn Python Programming</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/lucide-static@0.294.0/font/lucide.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <i class="lucide-code-2 logo-icon"></i>
+                <span class="logo-text">Codro</span>
+            </a>
+            <nav class="desktop-nav">
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="community.html" class="nav-link">Community</a>
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <i class="lucide-sun sun-icon"></i>
+                    <i class="lucide-moon moon-icon"></i>
+                </button>
+            </nav>
+            <button class="mobile-menu-button" aria-label="Open menu">
+                <i class="lucide-menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-menu">
+        <div class="container">
+            <div class="mobile-menu-header">
+                <a href="index.html" class="logo">
+                    <i class="lucide-code-2 logo-icon"></i>
+                    <span class="logo-text">Codro</span>
+                </a>
+                <button class="mobile-close" aria-label="Close menu">
+                    <i class="lucide-x"></i>
+                </button>
+            </div>
+            <nav class="mobile-nav">
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="community.html" class="nav-link">Community</a>
+                <button class="theme-toggle-mobile" aria-label="Toggle theme">
+                    <i class="lucide-sun sun-icon"></i>
+                    <i class="lucide-moon moon-icon"></i>
+                </button>
+            </nav>
+        </div>
+    </div>
+
+    <canvas id="background-canvas"></canvas>
+
+    <main class="course-page">
+        <button class="menu-toggle" aria-label="Toggle course menu">
+            <i class="lucide-menu"></i>
+        </button>
+        <div class="course-layout">
+            <!-- Course Navigation Sidebar -->
+            <aside class="course-sidebar">
+                <div class="course-nav-header">
+                    <i class="lucide-list"></i>
+                    <h2>Course Content</h2>
+                </div>
+                <nav class="course-navigation">
+                    <!-- Module 1 -->
+                    <div class="course-module">
+                        <div class="module-header">
+                            <i class="lucide-chevron-right"></i>
+                            <h3>Introduction to Python</h3>
+                        </div>
+                        <div class="module-lessons">
+                            <button class="lesson-item active">
+                                <i class="lucide-play-circle"></i>
+                                <span>Welcome to Python</span>
+                                <span class="lesson-duration">5:30</span>
+                            </button>
+                            <button class="lesson-item">
+                                <i class="lucide-play-circle"></i>
+                                <span>Setting Up Your Environment</span>
+                                <span class="lesson-duration">10:15</span>
+                            </button>
+                            <button class="lesson-item">
+                                <i class="lucide-check-circle completed"></i>
+                                <span>Your First Python Program</span>
+                                <span class="lesson-duration">8:45</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Module 2 -->
+                    <div class="course-module">
+                        <div class="module-header">
+                            <i class="lucide-chevron-right"></i>
+                            <h3>Variables and Data Types</h3>
+                        </div>
+                        <div class="module-lessons">
+                            <button class="lesson-item">
+                                <i class="lucide-play-circle"></i>
+                                <span>Understanding Variables</span>
+                                <span class="lesson-duration">7:20</span>
+                            </button>
+                            <button class="lesson-item">
+                                <i class="lucide-play-circle"></i>
+                                <span>Numbers and Strings</span>
+                                <span class="lesson-duration">12:45</span>
+                            </button>
+                            <button class="lesson-item">
+                                <i class="lucide-play-circle"></i>
+                                <span>Lists and Dictionaries</span>
+                                <span class="lesson-duration">15:30</span>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+            </aside>
+
+            <!-- Main Content Area -->
+            <div class="course-main">
+                <!-- Video Player -->
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/kqtD5dpn9C8"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        class="video-player"
+                    ></iframe>
+                </div>
+
+                <!-- Lesson Content -->
+                <div class="lesson-content">
+                    <h1 class="text-gradient">Welcome to Python</h1>
+                    <div class="lesson-text">
+                        <p>Welcome to the Python Basics course! In this introductory lesson, we'll cover:</p>
+                        <ul>
+                            <li>What is Python and why it's popular</li>
+                            <li>Who uses Python and for what purposes</li>
+                            <li>What you'll learn in this course</li>
+                            <li>How to make the most of this learning journey</li>
+                        </ul>
+                        <h2>What is Python?</h2>
+                        <p>Python is a high-level, interpreted programming language that was created by Guido van Rossum and released in 1991. It emphasizes code readability with its notable use of significant whitespace.</p>
+                        <h2>Why Python?</h2>
+                        <p>Python is widely used for:</p>
+                        <ul>
+                            <li>Web Development</li>
+                            <li>Data Science and Machine Learning</li>
+                            <li>Automation and Scripting</li>
+                            <li>Software Development</li>
+                        </ul>
+                        <div class="code-example">
+                            <pre><code># Your first Python program
+print("Hello, World!")
+
+# Variables and basic operations
+name = "Python Learner"
+print(f"Welcome, {name}!")</code></pre>
+                        </div>
+                    </div>
+                    <a href="#" class="next-lesson">
+                        <div class="next-lesson-info">
+                            <span class="next-lesson-label">Next Lesson</span>
+                            <span class="next-lesson-title">Setting Up Your Python Environment</span>
+                        </div>
+                        <i class="lucide-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

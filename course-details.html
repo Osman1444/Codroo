@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Basics Course - Learn Python Programming</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/lucide-static@0.294.0/font/lucide.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <i class="lucide-code-2 logo-icon"></i>
+                <span class="logo-text">Codro</span>
+            </a>
+            <nav class="desktop-nav">
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="community.html" class="nav-link">Community</a>
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <i class="lucide-sun sun-icon"></i>
+                    <i class="lucide-moon moon-icon"></i>
+                </button>
+            </nav>
+            <button class="mobile-menu-button" aria-label="Open menu">
+                <i class="lucide-menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-menu">
+        <div class="container">
+            <div class="mobile-menu-header">
+                <a href="index.html" class="logo">
+                    <i class="lucide-code-2 logo-icon"></i>
+                    <span class="logo-text">Codro</span>
+                </a>
+                <button class="mobile-close" aria-label="Close menu">
+                    <i class="lucide-x"></i>
+                </button>
+            </div>
+            <nav class="mobile-nav">
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="community.html" class="nav-link">Community</a>
+                <button class="theme-toggle-mobile" aria-label="Toggle theme">
+                    <i class="lucide-sun sun-icon"></i>
+                    <i class="lucide-moon moon-icon"></i>
+                </button>
+            </nav>
+        </div>
+    </div>
+
+    <canvas id="background-canvas"></canvas>
+
+    <main class="course-details">
+        <div class="course-header">
+            <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=1200&h=400&fit=crop" 
+                 alt="Python Basics Course Cover"
+                 class="course-cover-image">
+        </div>
+
+        <div class="course-content-grid">
+            <div class="course-main-content">
+                <h1 class="text-gradient">Python Basics</h1>
+                <p class="course-description">
+                    Master the fundamentals of Python programming through hands-on projects and interactive exercises. 
+                    Perfect for beginners starting their coding journey.
+                </p>
+
+                <div class="course-stats">
+                    <div class="stat-item">
+                        <i class="lucide-clock"></i>
+                        <span>6 weeks</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="lucide-bar-chart-2"></i>
+                        <span>Beginner</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="lucide-star"></i>
+                        <span>4.8 (1,234 ratings)</span>
+                    </div>
+                </div>
+
+                <div class="course-section">
+                    <h2>Prerequisites</h2>
+                    <ul class="prerequisites-list">
+                        <li>
+                            <i class="lucide-check-circle"></i>
+                            <span>No prior programming experience required</span>
+                        </li>
+                        <li>
+                            <i class="lucide-check-circle"></i>
+                            <span>Basic computer skills</span>
+                        </li>
+                        <li>
+                            <i class="lucide-check-circle"></i>
+                            <span>Enthusiasm to learn</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="course-section">
+                    <h2>What you'll learn</h2>
+                    <ul class="learning-outcomes">
+                        <li>
+                            <i class="lucide-check"></i>
+                            <span>Python syntax and programming fundamentals</span>
+                        </li>
+                        <li>
+                            <i class="lucide-check"></i>
+                            <span>Object-oriented programming concepts</span>
+                        </li>
+                        <li>
+                            <i class="lucide-check"></i>
+                            <span>Building real-world applications</span>
+                        </li>
+                        <li>
+                            <i class="lucide-check"></i>
+                            <span>Best practices and code organization</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="course-section">
+                    <h2>Course Content</h2>
+                    <div class="modules-list">
+                        <div class="module-item">
+                            <i class="lucide-play"></i>
+                            <span>Introduction to Python</span>
+                            <span class="module-duration">1h 30m</span>
+                        </div>
+                        <div class="module-item">
+                            <i class="lucide-play"></i>
+                            <span>Variables and Data Types</span>
+                            <span class="module-duration">2h 15m</span>
+                        </div>
+                        <div class="module-item">
+                            <i class="lucide-play"></i>
+                            <span>Control Flow and Functions</span>
+                            <span class="module-duration">2h 45m</span>
+                        </div>
+                        <div class="module-item">
+                            <i class="lucide-play"></i>
+                            <span>Object-Oriented Programming</span>
+                            <span class="module-duration">3h 20m</span>
+                        </div>
+                        <div class="module-item">
+                            <i class="lucide-play"></i>
+                            <span>Working with Files and APIs</span>
+                            <span class="module-duration">2h 50m</span>
+                        </div>
+                        <div class="module-item">
+                            <i class="lucide-play"></i>
+                            <span>Final Project</span>
+                            <span class="module-duration">4h 00m</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-sidebar">
+                <div class="enrollment-card">
+                    <h2>Enroll in this course</h2>
+                    <ul class="enrollment-features">
+                        <li>
+                            <i class="lucide-book"></i>
+                            <span>6 comprehensive modules</span>
+                        </li>
+                        <li>
+                            <i class="lucide-users"></i>
+                            <span>24/7 community support</span>
+                        </li>
+                        <li>
+                            <i class="lucide-code"></i>
+                            <span>Hands-on projects</span>
+                        </li>
+                        <li>
+                            <i class="lucide-award"></i>
+                            <span>Certificate of completion</span>
+                        </li>
+                    </ul>
+                    <a href="python-basics.html" class="enrollment-button">
+                        <i class="lucide-play-circle"></i>
+                        <span>Start Learning</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

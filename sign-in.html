@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Codro Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/lucide-static@0.294.0/font/lucide.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <i class="lucide-code-2 logo-icon"></i>
+                <span class="logo-text">Codro</span>
+            </a>
+            <nav class="desktop-nav">
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="community.html" class="nav-link">Community</a>
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <i class="lucide-sun sun-icon"></i>
+                    <i class="lucide-moon moon-icon"></i>
+                </button>
+            </nav>
+            <button class="mobile-menu-button" aria-label="Open menu">
+                <i class="lucide-menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-menu">
+        <div class="container">
+            <div class="mobile-menu-header">
+                <a href="index.html" class="logo">
+                    <i class="lucide-code-2 logo-icon"></i>
+                    <span class="logo-text">Codro</span>
+                </a>
+                <button class="mobile-close" aria-label="Close menu">
+                    <i class="lucide-x"></i>
+                </button>
+            </div>
+            <nav class="mobile-nav">
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="community.html" class="nav-link">Community</a>
+                <button class="theme-toggle-mobile" aria-label="Toggle theme">
+                    <i class="lucide-sun sun-icon"></i>
+                    <i class="lucide-moon moon-icon"></i>
+                </button>
+            </nav>
+        </div>
+    </div>
+
+    <canvas id="background-canvas"></canvas>
+
+    <main class="sign-in-page">
+        <div class="auth-container">
+            <a href="index.html" class="back-button">
+                <i class="lucide-arrow-left"></i>
+                <span>Back to Home</span>
+            </a>
+            <div class="auth-card">
+                <div class="auth-header">
+                    <h1>Welcome back</h1>
+                    <p>Sign in to continue your learning journey</p>
+                </div>
+
+                <form class="auth-form">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <div class="input-with-icon">
+                            <i class="lucide-mail"></i>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="input-with-icon">
+                            <i class="lucide-lock"></i>
+                            <input type="password" id="password" placeholder="Enter your password" required>
+                        </div>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="remember-me">
+                            <input type="checkbox" id="remember">
+                            <span>Remember me</span>
+                        </label>
+                        <a href="#" class="forgot-password">Forgot password?</a>
+                    </div>
+
+                    <button type="submit" class="auth-button">Sign In</button>
+
+                    <div class="auth-divider">
+                        <span>Or continue with</span>
+                    </div>
+
+                    <div class="social-auth">
+                        <button type="button" class="social-button google">
+                            <img src="https://www.google.com/favicon.ico" alt="Google" width="20" height="20">
+                            <span>Google</span>
+                        </button>
+                        <button type="button" class="social-button github">
+                            <i class="lucide-github"></i>
+                            <span>GitHub</span>
+                        </button>
+                    </div>
+
+                    <p class="auth-footer">
+                        Don't have an account? 
+                        <a href="sign-up.html">Sign up</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

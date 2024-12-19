@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Learn Python Programming</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/lucide-static@0.294.0/font/lucide.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <i class="lucide-code-2 logo-icon"></i>
+                <span class="logo-text">Codro</span>
+            </a>
+            <nav class="desktop-nav">
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="community.html" class="nav-link">Community</a>
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <i class="lucide-sun sun-icon"></i>
+                    <i class="lucide-moon moon-icon"></i>
+                </button>
+            </nav>
+            <button class="mobile-menu-button" aria-label="Open menu">
+                <i class="lucide-menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-menu">
+        <div class="container">
+            <div class="mobile-menu-header">
+                <a href="index.html" class="logo">
+                    <i class="lucide-code-2 logo-icon"></i>
+                    <span class="logo-text">Codro</span>
+                </a>
+                <button class="mobile-close" aria-label="Close menu">
+                    <i class="lucide-x"></i>
+                </button>
+            </div>
+            <nav class="mobile-nav">
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="community.html" class="nav-link">Community</a>
+                <button class="theme-toggle-mobile" aria-label="Toggle theme">
+                    <i class="lucide-sun sun-icon"></i>
+                    <i class="lucide-moon moon-icon"></i>
+                </button>
+            </nav>
+        </div>
+    </div>
+
+    <canvas id="background-canvas"></canvas>
+
+    <main class="container" style="padding-top: 6rem;">
+        <div style="max-width: 72rem; margin: 0 auto;">
+            <h1 class="text-gradient" style="font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem;">Available Courses</h1>
+            <p style="margin-bottom: 2rem;">Start your coding journey with our comprehensive courses</p>
+            
+            <div class="courses-grid">
+                <!-- Python Basics Course -->
+                <a href="course-details.html?id=python-basics" class="course-card">
+                    <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=800&h=400&fit=crop" 
+                         alt="Python Basics" 
+                         class="course-image">
+                    <div class="course-content">
+                        <h3 class="course-title">Python Basics</h3>
+                        <p class="course-description">Learn the fundamentals of Python programming from scratch</p>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="lucide-clock"></i>
+                                <span>6 weeks</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="lucide-star" style="color: #FCD34D;"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

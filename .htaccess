@@ -1,0 +1,39 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+# Redirect HTTP to HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Custom URL mappings
+RewriteRule ^home_page$ index.php [L]
+RewriteRule ^signin_page$ process_login.php [L]
+RewriteRule ^signup_page$ process_registration.php [L]
+RewriteRule ^signout_page$ logout.php [L]
+RewriteRule ^dashboard_page$ welcome.php [L]
+RewriteRule ^reset-password$ reset_password.php [L]
+RewriteRule ^verify-reset-code$ verify_reset_code.php [L]
+RewriteRule ^forgot-password$ forgot_password.php [L]
+RewriteRule ^verify$ verify.php [L]
+RewriteRule ^resend-code$ resend_code.php [L]
+
+# Hide PHP extension
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+# Set default index
+DirectoryIndex index.html index.php
+
+# Security headers
+<IfModule mod_headers.c>
+    Header set X-XSS-Protection "1; mode=block"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-Content-Type-Options "nosniff"
+</IfModule>
+
+# Prevent access to sensitive files
+<FilesMatch "^(database_connection\.php|config\.php|.*\.log)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>

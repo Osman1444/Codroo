@@ -1,91 +1,42 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codro - Learn Python Programming</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="/assets/images/logo.png">
+    <title>Welcome to My Project</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body class="min-h-screen dark">
-    <canvas id="background-canvas"></canvas>
-    
-    <!-- Navbar will be inserted here by JavaScript -->
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1 class="hero-title">
-                <span class="text-gradient">Master Python Programming</span>
-            </h1>
-            <p class="hero-subtitle">
-                Start your coding journey with our interactive learning platform
-            </p>
-            <div class="hero-buttons">
-                <a href="courses.html" class="btn btn-primary">Explore Courses</a>
-                <a href="community.html" class="btn btn-secondary">Join Community</a>
-            </div>
+<body>
+
+    <div class="form-container">
+        <div class="form-header">
+            <h1>Welcome to Codro</h1>
+            <p>Choose an option to continue</p>
         </div>
-    </section>
 
-    <!-- Features Section -->
-    <section class="features" id="features">
-        <div class="container">
-            <h2 class="features-title">
-                <span class="text-gradient">Why Choose Our Platform</span>
-            </h2>
-            <p class="features-subtitle">
-                Discover the features that make our platform the perfect choice for learning Python
-            </p>
-            <div class="features-grid">
-                <!-- Feature 1 -->
-                <div class="feature-card">
-                    <i data-lucide="book-open" class="feature-icon"></i>
-                    <h3 class="feature-title">Interactive Learning</h3>
-                    <p class="feature-text">Learn by doing with our interactive coding exercises and real-time feedback</p>
-                </div>
-                <!-- Feature 2 -->
-                <div class="feature-card">
-                    <i data-lucide="zap" class="feature-icon"></i>
-                    <h3 class="feature-title">Structured Learning</h3>
-                    <p class="feature-text">Follow our carefully designed curriculum to master Python step by step</p>
-                </div>
-                <!-- Feature 3 -->
-                <div class="feature-card">
-                    <i data-lucide="users" class="feature-icon"></i>
-                    <h3 class="feature-title">Active Community</h3>
-                    <p class="feature-text">Join our community of learners and get help when you need it</p>
-                </div>
-                <!-- Feature 4 -->
-                <div class="feature-card">
-                    <i data-lucide="code-2" class="feature-icon"></i>
-                    <h3 class="feature-title">Real-world Projects</h3>
-                    <p class="feature-text">Build practical projects that you can add to your portfolio</p>
-                </div>
-                <!-- Feature 5 -->
-                <div class="feature-card">
-                    <i data-lucide="target" class="feature-icon"></i>
-                    <h3 class="feature-title">Clear Learning Path</h3>
-                    <p class="feature-text">Follow a structured path from beginner to advanced Python developer</p>
-                </div>
-                <!-- Feature 6 -->
-                <div class="feature-card">
-                    <i data-lucide="shield" class="feature-icon"></i>
-                    <h3 class="feature-title">Lifetime Access</h3>
-                    <p class="feature-text">Get unlimited access to all courses and future updates</p>
-                </div>
+        <div class="form-links">
+            <div class="btn-group">
+                <a href="register.php" class="btn btn-primary">
+                    <i class="fas fa-user-plus"></i> Sign Up
+                </a>
+                
+                <a href="login.php" class="btn btn-secondary">
+                    <i class="fas fa-sign-in-alt"></i> Login
+                </a>
             </div>
-        </div>
-    </section>
 
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script>lucide.createIcons();</script>
-    <script type="module">
-        import { initNavbar } from './components/navbar.js';
-        // Initialize the navbar
-        initNavbar();
-    </script>
-    <script src="script.js"></script>
+            <p class="mt-3">
+                <a href="forgot_password.php">
+                    <i class="fas fa-key"></i> Forgot Password?
+                </a>
+            </p>
+        </div>
+
+        <footer class="form-footer">
+            <p>&copy; 2024 Codro Platform. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
-</html>
+</html> 
